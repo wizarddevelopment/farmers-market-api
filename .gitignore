@@ -1,0 +1,6 @@
+# Ignore bundler config.
+/.bundle
+
+/log/*.log
+/tmp
+config/database.yml
