@@ -9,7 +9,7 @@ module Api
     end
 
     def default_serializer_options
-      { root: "Markets" }
+      { root: "markets" }
     end
   end
 

@@ -16,7 +16,7 @@ GET   /markets
         "longitude": -74.43443,
         "locationDescription": "100 Amy street on corner of Armando Blvd",
         "address": {
-          "zip": 11324,  
+          "zipcode": 11324,
           "street": "100 Amy Street",
           "city": "New York City",
           "state": "New York"
