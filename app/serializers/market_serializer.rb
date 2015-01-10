@@ -18,5 +18,4 @@ class MarketSerializer < ActiveModel::Serializer
       twitter: links.twitter
     }
   end
-
 end

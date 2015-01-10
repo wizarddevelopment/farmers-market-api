@@ -11,7 +11,7 @@ class Market < ActiveRecord::Base
       u.street = market["address_line_1"]
       u.city = market["city"]
       u.state = market["state"]
-      u.web = market["market_link"]["url"] if market.has_key?("market_link")
+      u.web = market["market_link"]["url"] if market.key?("market_link")
       u.schedule_hours_description = market["operation_hours"]
       u.schedule_season_description = market["operation_season"]
       u.save

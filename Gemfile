@@ -16,6 +16,10 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem 'rubocop'
+end
+
 group :production, :staging do
   gem 'rails_12factor'
 end

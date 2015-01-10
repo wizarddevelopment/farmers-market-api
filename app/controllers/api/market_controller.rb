@@ -1,7 +1,5 @@
 module Api
-
   class MarketController < ApplicationController
-
     respond_to :json
 
     def all
@@ -12,5 +10,4 @@ module Api
       { root: "markets" }
     end
   end
-
 end

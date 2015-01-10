@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-  get 'market/all'
+    get 'market/all'
   end
 
   namespace :api, constraints: { format: :json } do

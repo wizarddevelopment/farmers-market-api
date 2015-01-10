@@ -1,0 +1,24 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - 'lib/tasks/cucumber.rake'
+    - 'Guardfile'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'vendor/bundle/**/*'
+    - 'config/unicorn.rb'
+
+Style/SignalException:
+  Enabled: false
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+# Metrics/LineLength:
+#   Max: 120
+Style/Documentation:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false

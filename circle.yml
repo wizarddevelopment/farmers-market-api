@@ -1,0 +1,11 @@
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: farmersmarket-production
+notify:
+  webhooks:
+    - url: http://wizarddev-statusbot.herokuapp.com/circle
+test:
+  pre:
+    - bundle exec rubocop -D -c .rubocop.yml
