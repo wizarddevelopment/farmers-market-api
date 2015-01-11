@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   namespace :api do
-    get 'market' => 'market#all'
+    resources :markets, only: [:index, :show], format: false
   end
 end
