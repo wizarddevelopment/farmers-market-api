@@ -1,5 +1,6 @@
 class MarketSerializer < ActiveModel::Serializer
-  attributes :id, :name, :latitude, :longitude, :location_description, :address, :links, :schedule_hours_description, :schedule_season_description
+  attributes :id, :name, :latitude, :longitude, :location_description,
+             :address, :links, :schedule_hours_description, :schedule_season_description
 
   def address
     address = object
